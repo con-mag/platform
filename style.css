@@ -1047,3 +1047,137 @@ html[data-theme="dark"] .btn-cta, html[data-theme="blue"] .btn-cta {
     transform: none;
   }
 }
+
+
+/* Mobile layout fixes — only responsive corrections */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: calc(var(--nav-height) + 3rem) 0 4rem;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .display-title {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+    line-height: 1.35;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .split-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .founder-img-container,
+  .reading-map-visual {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    min-height: 260px;
+    padding: 1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .stat-card {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .audience-section {
+    padding: 3rem 1rem;
+  }
+
+  .audience-chips {
+    gap: 0.6rem;
+  }
+
+  .chip {
+    padding: 0.45rem 1rem;
+  }
+
+  .cta-section {
+    padding: 3rem 1rem;
+    margin: 2rem 0;
+  }
+
+  .cta-section h2 {
+    font-size: 2rem !important;
+    line-height: 1.4;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .btn-cta {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .page-hero {
+    padding: calc(var(--nav-height) + 3rem) 0 3rem;
+  }
+
+  .page-layout {
+    padding: 2.5rem 0;
+    gap: 2rem;
+  }
+
+  .policy-section {
+    margin-bottom: 3rem;
+  }
+
+  .footer {
+    padding: 3rem 0 1.5rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .display-title {
+    font-size: 2rem;
+  }
+
+  .founder-img-container,
+  .reading-map-visual {
+    min-height: 220px;
+  }
+}
