@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="cream">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="كَوْن مشروع ثقافي يهدف إلى إعادة الاعتبار إلى فن المقالة، وإتاحة مساحة للكتابة الأدبية والفكرية والفلسفية.">
+  <title>CON — مشروع ثقافي للكتابة والأدب والفكر</title>
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="CON — مشروع ثقافي للكتابة والأدب والفكر">
+  <meta property="og:description" content="كَوْن مشروع ثقافي يهدف إلى إعادة الاعتبار إلى فن المقالة، وإتاحة مساحة للكتابة الأدبية والفكرية والفلسفية.">
+  <meta property="og:type" content="website">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons loaded in CSS, script loaded here for rendering -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand">CON</a>
+      
+      <nav class="nav-links">
+        <a href="index.html" class="active">الرئيسية</a>
+        <a href="#about">عن كَوْن</a>
+        <a href="#ecosystem">مساحات كَوْن</a>
+        <a href="join.html">الانضمام</a>
+        <a href="join.html#rules">القواعد</a>
+        <a href="join.html#internal-system">النظام الداخلي</a>
+        
+        <div class="theme-switcher">
+          <div class="theme-indicator"></div>
+          <button class="theme-btn active" data-theme-val="cream" aria-label="Cream Theme"><i data-lucide="sun"></i></button>
+          <button class="theme-btn" data-theme-val="dark" aria-label="Dark Theme"><i data-lucide="moon"></i></button>
+          <button class="theme-btn" data-theme-val="blue" aria-label="Blue Theme"><i data-lucide="palette"></i></button>
+        </div>
+      </nav>
+
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="orbit orbit-1"><div class="node"></div></div>
+      <div class="orbit orbit-2"><div class="node"></div></div>
+      <div class="orbit orbit-3"><div class="node"></div></div>
+    </div>
+    
+    <div class="container">
+      <div class="hero-content reveal">
+        <h1 class="display-title">مساحة للكتابة، والفكر، والأدب.</h1>
+        <p class="hero-subtitle">مشروع ثقافي يهدف إلى إعادة الاعتبار إلى فن المقالة، وإتاحة مساحة للكتابة الأدبية والفكرية والفلسفية بعيدًا عن القوالب الصحفية التقليدية.</p>
+        
+        <div class="btn-group">
+          <a href="#ecosystem" class="btn btn-primary">استكشف كَوْن</a>
+          <a href="join.html" class="btn btn-outline">انضم إلى كَوْن</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About CON -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="text-center reveal" style="max-width: 800px; margin: 0 auto 4rem;">
+        <h2 class="text-primary" style="margin-bottom: 1rem;">عن كَوْن</h2>
+        <p style="font-weight: 600; color: var(--primary); margin-bottom: 1.5rem;">تأسست كَوْن في 23 مارس 2024.</p>
+        <p class="text-muted" style="font-size: 1.2rem;">
+          «كَوْن» مشروع ثقافي يهدف إلى إعادة الاعتبار إلى فن المقالة، وإتاحة مساحة للكتابة الأدبية والفكرية والفلسفية بعيدًا عن القوالب الصحفية التقليدية.
+        </p>
+      </div>
+
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        <div class="card reveal" style="transition-delay: 0.1s;">
+          <div class="card-icon"><i data-lucide="book"></i></div>
+          <h3 class="card-title">مجلة إلكترونية</h3>
+        </div>
+        <div class="card reveal" style="transition-delay: 0.2s;">
+          <div class="card-icon"><i data-lucide="globe"></i></div>
+          <h3 class="card-title">موقع لنشر المقالات</h3>
+        </div>
+        <div class="card reveal" style="transition-delay: 0.3s;">
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></div>
+          <h3 class="card-title">صفحة أدبية على Facebook</h3>
+        </div>
+        <div class="card reveal" style="transition-delay: 0.4s;">
+          <div class="card-icon"><i data-lucide="users"></i></div>
+          <h3 class="card-title">فريق من الكتاب والعاملين في المحتوى</h3>
+        </div>
+        <div class="card reveal" style="transition-delay: 0.5s;">
+          <div class="card-icon"><i data-lucide="layers"></i></div>
+          <h3 class="card-title">برامج داخلية لتدريب وتطوير الكتاب</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecosystem -->
+  <section id="ecosystem" class="section">
+    <div class="container">
+      <h2 class="text-center reveal" style="margin-bottom: 4rem;">مساحات كَوْن</h2>
+      
+      <div class="grid ecosystem-grid">
+        <div class="card ecosystem-card reveal">
+          <div class="card-category">01</div>
+          <h3 class="card-title">أدبيات كَوْن</h3>
+          <p class="card-desc">شعر وأدب</p>
+          <a href="https://www.facebook.com/adabiyat1con" target="_blank" rel="noopener noreferrer" class="card-link">
+            استكشف <i data-lucide="arrow-left"></i>
+          </a>
+        </div>
+
+        <div class="card ecosystem-card reveal" style="transition-delay: 0.1s;">
+          <div class="card-category">02</div>
+          <h3 class="card-title">كَوْن بالعربي</h3>
+          <p class="card-desc">مجتمع أدبي وثقافي على Facebook</p>
+          <a href="https://facebook.com/groups/683548504707664/" target="_blank" rel="noopener noreferrer" class="card-link">
+            استكشف <i data-lucide="arrow-left"></i>
+          </a>
+        </div>
+
+        <div class="card ecosystem-card reveal" style="transition-delay: 0.2s;">
+          <div class="card-category">03</div>
+          <h3 class="card-title">مجلة كَوْن</h3>
+          <p class="card-desc">صفحة مجلة كَوْن على Facebook</p>
+          <a href="https://www.facebook.com/conmagazine" target="_blank" rel="noopener noreferrer" class="card-link">
+            استكشف <i data-lucide="arrow-left"></i>
+          </a>
+        </div>
+
+        <div class="card ecosystem-card reveal" style="transition-delay: 0.3s;">
+          <div class="card-category">04</div>
+          <h3 class="card-title">منشورات مجلة كَوْن</h3>
+          <p class="card-desc">منشورات مجلة كَوْن على كتوباتي</p>
+          <a href="https://www.ktobati.com/author/%D9%85%D8%AC%D9%84%D8%A9-%D9%83%D9%88%D9%86" target="_blank" rel="noopener noreferrer" class="card-link">
+            استكشف <i data-lucide="arrow-left"></i>
+          </a>
+        </div>
+
+        <div class="card ecosystem-card reveal" style="transition-delay: 0.4s;">
+          <div class="card-category">05</div>
+          <h3 class="card-title">قناة كَوْن</h3>
+          <p class="card-desc">القناة الرسمية على Telegram</p>
+          <a href="https://t.me/con_mag" target="_blank" rel="noopener noreferrer" class="card-link">
+            استكشف <i data-lucide="arrow-left"></i>
+          </a>
+        </div>
+
+        <div class="card ecosystem-card reveal" style="transition-delay: 0.5s;">
+          <div class="card-category">06</div>
+          <h3 class="card-title">موقع كَوْن</h3>
+          <p class="card-desc">الموقع الإلكتروني</p>
+          <a href="http://theconmag.blogspot.com" target="_blank" rel="noopener noreferrer" class="card-link">
+            استكشف <i data-lucide="arrow-left"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder -->
+  <section class="section">
+    <div class="container">
+      <div class="split-section reveal">
+        <div>
+          <h2 style="margin-bottom: 0.5rem;">عن مؤسس كَوْن</h2>
+          <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 0.5rem;">محمد رمضان</h3>
+          <p class="text-muted" style="font-size: 1.1rem; margin-bottom: 2rem;">مؤسس ومدير مشروع كَوْن</p>
+          <a href="https://con-mag.github.io/mo-portfolio/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">استكشف البورتفوليو</a>
+        </div>
+        <div class="founder-img-container" style="padding: 0;">
+          <img src="images/profile.jpg" alt="محمد رمضان" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reading Map -->
+  <section class="section">
+    <div class="container">
+      <div class="split-section reveal">
+        <div class="reading-map-visual" style="order: 1; padding: 1.5rem;">
+          <img src="images/con-logo.png" alt="CON Logo" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+        <div style="order: 2;">
+          <div style="display: inline-block; padding: 0.25rem 1rem; background-color: var(--primary-soft); color: var(--primary); border-radius: 20px; font-weight: 600; margin-bottom: 1rem; font-size: 0.875rem;">برنامج برعاية كَوْن</div>
+          <h2 style="margin-bottom: 1.5rem;">الخريطة القرائية</h2>
+          <p class="text-muted" style="margin-bottom: 2rem;">مسار استكشافي فكري يربط بين الأفكار والكتب، ويفتح آفاقاً جديدة للقراءة العميقة.</p>
+          <a href="https://con-mag.github.io/reading/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">استكشف الخريطة القرائية</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics -->
+  <section class="section">
+    <div class="container">
+      <div class="grid stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-number" data-value="759878+">0</div>
+          <div class="stat-label">متابعو «أدبيات كَوْن»</div>
+        </div>
+        <div class="stat-card reveal" style="transition-delay: 0.1s;">
+          <div class="stat-number" data-value="343.6M+">0</div>
+          <div class="stat-label">المشاهدات</div>
+        </div>
+        <div class="stat-card reveal" style="transition-delay: 0.2s;">
+          <div class="stat-number" data-value="14.1M+">0</div>
+          <div class="stat-label">التفاعل</div>
+        </div>
+        <div class="stat-card reveal" style="transition-delay: 0.3s;">
+          <div class="stat-number" data-value="438K+">0</div>
+          <div class="stat-label">المشاركات</div>
+        </div>
+        <div class="stat-card reveal" style="transition-delay: 0.4s;">
+          <div class="stat-number" data-value="287K+">0</div>
+          <div class="stat-label">التعليقات</div>
+        </div>
+        <div class="stat-card reveal" style="transition-delay: 0.5s;">
+          <div class="stat-number" data-value="475K+">0</div>
+          <div class="stat-label">نمو المتابعين</div>
+        </div>
+        <div class="stat-card reveal" style="transition-delay: 0.6s;">
+          <div class="stat-number" data-value="60+">0</div>
+          <div class="stat-label">المقالات المنشورة</div>
+        </div>
+        <div class="stat-card reveal" style="transition-delay: 0.7s;">
+          <div class="stat-number" data-value="100K+">0</div>
+          <div class="stat-label">زيارات الموقع خلال 2026</div>
+        </div>
+        <div class="stat-card reveal" style="transition-delay: 0.8s;">
+          <div class="stat-number" data-value="10">0</div>
+          <div class="stat-label">كتاب انضموا إلى كَوْن</div>
+        </div>
+        <div class="stat-card reveal" style="transition-delay: 0.9s;">
+          <div class="stat-number" data-value="10">0</div>
+          <div class="stat-label">أعضاء الفريق المنتظمون</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audience -->
+  <section class="section">
+    <div class="container">
+      <div class="audience-section reveal text-center">
+        <h2>الجمهور</h2>
+        <p style="font-size: 1.15rem; max-width: 700px; margin: 1rem auto 0;">
+          جمهور عربي، مع حضور رئيسي في مصر والسودان والجزائر وسوريا وليبيا والمغرب، والفئة الأكبر عمرًا بين 18 و34 عامًا.
+        </p>
+        <div class="audience-chips">
+          <span class="chip">مصر</span>
+          <span class="chip">السودان</span>
+          <span class="chip">الجزائر</span>
+          <span class="chip">سوريا</span>
+          <span class="chip">ليبيا</span>
+          <span class="chip">المغرب</span>
+          <span class="chip" style="background-color: var(--primary); color: var(--bg);">18 - 34 عامًا</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application CTA -->
+  <section class="container">
+    <div class="cta-section reveal">
+      <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">هل تريد أن تكتب مع كَوْن؟</h2>
+      <p class="text-muted" style="font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+        إذا كنت كاتبًا جامعيًا وتبحث عن مساحة جادة للكتابة الأدبية والفكرية، يمكنك التقدّم إلى كَوْن وفق شروط الانضمام.
+      </p>
+      
+      <div class="cta-buttons">
+        <a href="https://forms.gle/rTJ12MedJv1Et5st7" target="_blank" rel="noopener noreferrer" class="btn-cta">
+          للنساء <i data-lucide="arrow-left"></i>
+        </a>
+        <a href="https://forms.gle/yQ1eBGFjTs966r787" target="_blank" rel="noopener noreferrer" class="btn-cta">
+          للرجال <i data-lucide="arrow-left"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="brand footer-brand">CON</a>
+          <p class="footer-desc">مشروع ثقافي لإعادة الاعتبار إلى فن المقالة، وإتاحة مساحة للكتابة الأدبية والفكرية والفلسفية.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/conmagazine" target="_blank" rel="noopener noreferrer" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            <a href="https://t.me/con_mag" target="_blank" rel="noopener noreferrer" class="social-link"><i data-lucide="send"></i></a>
+            <a href="http://theconmag.blogspot.com" target="_blank" rel="noopener noreferrer" class="social-link"><i data-lucide="globe"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">روابط هامة</h4>
+          <div class="footer-links">
+            <a href="#about">عن كَوْن</a>
+            <a href="#ecosystem">مساحات كَوْن</a>
+            <a href="https://con-mag.github.io/reading/" target="_blank" rel="noopener noreferrer">الخريطة القرائية</a>
+            <a href="https://con-mag.github.io/mo-portfolio/" target="_blank" rel="noopener noreferrer">البورتفوليو</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">الانضمام والقواعد</h4>
+          <div class="footer-links">
+            <a href="join.html">الانضمام</a>
+            <a href="join.html#rules">القواعد</a>
+            <a href="https://www.ktobati.com/author/%D9%85%D8%AC%D9%84%D8%A9-%D9%83%D9%88%D9%86" target="_blank" rel="noopener noreferrer">صفحة كتوباتي</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>تأسست كَوْن في 23 مارس 2024</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
